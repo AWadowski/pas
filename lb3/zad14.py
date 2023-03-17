@@ -4,8 +4,6 @@ import socket
 datagram = "0b 54 89 8b 1f 9a 18 ec bb b1 64 f2 80 18 00 e3 67 71 00 00 01 01 08 0a 02 c1 a4 ee 00 1a 4c ee 68 65 6c 6c 6f 20 3a 29".split()
 source_port = int("".join(datagram[:2]), 16)
 dest_port = int("".join(datagram[2:4]), 16)
-length = int("".join(datagram[4:6]), 16)
-checksum = int("".join(datagram[6:8]), 16)
 data = "".join([chr(int(x, 16)) for x in datagram[8:]])
 print(source_port)
 print(dest_port)
