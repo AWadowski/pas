@@ -1,0 +1,23 @@
+•Dla którego z gniazd czas jest krótszy?
+Czas przesyłu jest krótszy dla UDP
+
+•Z czego wynika krótszy czas?
+Wynika z braku potwierdzeń po stronie UDP oraz braku kontroli przepływu danych
+
+•Jakie są zalety / wady obu rozwiązań?
+
+Wady UDP:
+- brak kontroli przepływu danych
+Zalety UDP:
+- brak potwierdzień nawiązania/zerwania połączenia
+- szybkość działania
+
+Wady TCP:
+- wolniejszy niż UDP
+- kontrola przepływu danych
+
+
+Zalety TCP:
+- niezawodność - przesyłanie danych nawet po przerwaniu
+- zachowanie kolejności
+- ustalanie stabilnego połączenia przed przesyłem danych
