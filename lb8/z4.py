@@ -16,8 +16,6 @@ def imap_login_and_check_unread_messages(server, port, user, password):
             msg_content = data[0][1].decode()
             print(f"Wiadomość {num}:")
             print(msg_content)
-
-            # Oznacz jako przeczytaną
             mail.store(num, "+FLAGS", "\\Seen")
             print(f"Wiadomość {num} oznaczona jako przeczytana.")
     else:

@@ -21,6 +21,6 @@ server = "212.182.24.27"
 port = 143
 user = "pasinf2017@infumcs.edu"
 password = "P4SInf2017"
-msg_num_to_delete = b"1"  # Wartość ta powinna być bajtową reprezentacją numeru wiadomości do usunięcia
+msg_num_to_delete = b"1"  
 
 imap_login_and_delete_message(server, port, user, password, msg_num_to_delete)
